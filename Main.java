@@ -1,13 +1,23 @@
- class Main {
-
-    public static void main(String[] args) {
-
-        int number=3;
-        if (number < 0)
-            System.out.println(number + " is a negative number.");
-        else if ( number > 0)
-            System.out.println(number + " is a positive number.");
+import java.util.Scanner;
+ class Main
+{
+    public static void main(String[] args) 
+    {
+        int n;
+        Scanner s = new Scanner(System.in);
+        System.out.print("");
+        n = s.nextInt();
+        if(n > 0)
+        {
+            System.out.println("The given number "+n+" is Positive");
+        }
+        else if(n < 0)
+        {
+            System.out.println("The given number "+n+" is Negative");
+        }
         else
-            System.out.println(number + " is 0");
+        {
+            System.out.println("The given number "+n+" is zero ");
+        }
     }
 }
